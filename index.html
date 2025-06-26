@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        background-color: aquamarine;
+      }
+        #container{
+            width: 90vw;
+            height: 300px;
+            /* border: 1px solid black; */
+            background-color:aquamarine;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        
+        .box{
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid black; */
+            margin: 5px;
+        }
+        #box1{
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            background-color: red;
+    
+        }
+         #box2{
+           clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+
+            background-color:green;
+    
+        }
+        #box3{
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            background-color: orange;
+        }
+        #box4{
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-color: blue;
+        }
+        #box5{
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            background-color: rgb(180, 134, 223);
+        }
+        #box6{
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            background-color: rgb(36, 201, 201);
+        }
+        #box7{
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            background-color: rgb(19, 19, 98);
+        }
+        #box8{
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            background-color: rgb(177, 160, 63);
+        }
+        #box9{
+            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            background-color: rgb(96, 91, 79);
+        }
+        #box10{
+            clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            background-color: rgb(97, 97, 32);
+        }
+        #box11{
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            background-color: red;
+        }
+        #box12{
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+            background-color: blueviolet;
+        }
+        #box13{
+            clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+            background-color: green;
+        }
+        #box14{
+            clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+            background-color: rgb(18, 147, 169);
+        }
+        #box15{
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+            background-color: rgb(96, 107, 117);
+        }
+        #box16{
+            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+            background-color: rgb(169, 18, 88);
+        }
+        #box17{
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            background-color: rgb(109, 171, 16);
+        }
+        #box18{
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            background-color: rgb(91, 77, 77);
+        }
+        #box19{
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background-color: rgb(62, 62, 99);
+        }
+        #box20{
+            clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+            background-color: rgb(157, 63, 63);
+        }
+        #box21{
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+            background-color: rgb(71, 82, 78);
+        }
+        #box22{
+            clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+            background-color: green;
+        }
+        #box23{
+            clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+            background-color: rgb(14, 14, 183);
+        }
+        #box24{
+            clip-path: inset(5% 20% 15% 10%);
+            background-color: rgb(120, 26, 201);
+        }
+        #box25{
+           clip-path: circle(50% at 50% 50%);
+            background-color: rgb(176, 135, 47);
+        }
+        #box26{
+            clip-path: ellipse(25% 40% at 50% 50%);
+            background-color: red;
+        }
+        .photo{
+            width: 200px;
+            height: 150px; 
+            
+           
+        }
+        .chobi{
+            margin: auto;
+            margin-top: 20px;
+            opacity: 0;
+            
+        }
+      
+         .chobi{
+        margin-left: 90px;
+        /* border: 1px dashed blue; */
+        width: 200px;
+        transition: 3s;
+         z-index: 1;
+    
+         }
+         /* #ib1{
+          opacity: 1;
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+         } */
+         #ib2{
+         position: relative;
+         top: -170px;
+         }
+           #ib3{
+         position: relative;
+         top: -340px;
+         }
+           #ib4{
+         position: relative;
+         top: -510px;
+         }
+           #ib5{
+         position: relative;
+         top: -680px;
+         }
+           #ib6{
+         position: relative;
+         top: -850px;
+         }
+           #ib7{
+         position: relative;
+         top: -1020px;
+         }
+           #ib8{
+         position: relative;
+         top: -1190px;
+         }
+           #ib9{
+         position: relative;
+         top: -1360px;
+         }
+           #ib10{
+         position: relative;
+         top: -1530px;
+         }
+           #ib11{
+         position: relative;
+         top: -1700px;
+         }
+           #ib12{
+         position: relative;
+         top: -1870px;
+         }
+           #ib13{
+         position: relative;
+         top: -2040px;
+         }
+           #ib14{
+         position: relative;
+         top: -2210px;
+         }
+           #ib15{
+         position: relative;
+         top: -2380px;
+         }
+           #ib16{
+         position: relative;
+         top: -2550px;
+         }
+           #ib17{
+         position: relative;
+         top: -2720px;
+         }
+           #ib18{
+         position: relative;
+         top: -2890px;
+         }
+           #ib19{
+         position: relative;
+         top: -3060px;
+         }
+           #ib20{
+         position: relative;
+         top: -3230px;
+         }
+           #ib21{
+         position: relative;
+         top: -3400px;
+         }
+           #ib22{
+         position: relative;
+         top: -3570px;
+         }
+          #ib23{
+         position: relative;
+         top: -3740px;
+         }
+          #ib24{
+         position: relative;
+         top: -3910px;
+         }
+          #ib25{
+         position: relative;
+         top: -4080px;
+         }
+          #ib26{
+         position: relative;
+         top: -4250px;
+         }
+         #head{
+          width: 300px;
+          height: 50px;
+          border: 5px solid black;
+          margin: auto;
+          font-size: 40px;
+          margin: 30px;
+          text-align: center;
+          border-radius: 20px;
+          
+         }
+         #pritam{
+          width: 210px;
+          height: 260px;
+          border: 2px dashed black;
+          position: relative;
+           top: -4505px; 
+          left: 85px;
+          border-radius: 20px;
+         }
+
+    </style>
+</head>
+<body>
+  <Header id="head">Click This icon</Header>
+    <div id="container">
+        <div id="box1" class="box"></div>
+        <div id="box2"  class="box"></div>
+        <div id="box3"  class="box"></div>
+        <div id="box4"  class="box"></div>
+        <div id="box5"  class="box"></div>
+        <div id="box6"  class="box"></div>
+        <div id="box7" class="box"></div>
+        <div id="box8"  class="box"></div>
+        <div id="box9"  class="box"></div>
+        <div id="box10"  class="box"></div>
+        <div id="box11"  class="box"></div>
+        <div id="box12"  class="box"></div>
+        <div id="box13"  class="box"></div>
+        <div id="box14"  class="box"></div>
+        <div id="box15"  class="box"></div>
+        <div id="box16"  class="box"></div>
+        <div id="box17"  class="box"></div>
+        <div id="box18"  class="box"></div>
+        <div id="box19"  class="box"></div>
+        <div id="box20"  class="box"></div>
+        <div id="box21"  class="box"></div>
+        <div id="box22"  class="box"></div>
+        <div id="box23"  class="box"></div>
+        <div id="box24"  class="box"></div>
+        <div id="box25"  class="box"></div>
+        <div id="box26"  class="box"></div>
+        </div>
+      
+         <div id="ib1" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib2" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib3" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib4" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib5" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib6" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib7" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib8" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib9" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib10" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib11" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib12" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib13" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib14" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib15" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib16" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib17" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib18" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib19" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib20" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib21" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib22" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib23" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib24" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib25" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+         <div id="ib26" class="chobi"><img src="IMG_20241009_094458.jpg" alt="" id="photo1" class="photo"> </div>
+ <div id="pritam"></div>
+
+
+         <script src="scripts.js"></script>
+ 
+         
+</body>
+</html>
